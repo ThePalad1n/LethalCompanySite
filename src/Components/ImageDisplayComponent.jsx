@@ -8,12 +8,14 @@ const ImageDisplayComponent = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/path/to/image.jpg"
-          alt="First slide"
+          src="..\assets\image1.JPG"
+          alt="First Step"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Description of the first slide.</p>
+          <h3>Step 1: </h3>
+          <p>Withing Lethal Company click on the cog</p>
+          <p>Go to manage</p>
+          <p>Browse Local Files</p>
         </Carousel.Caption>
       </Carousel.Item>
       {/* End of block */}

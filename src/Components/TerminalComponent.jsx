@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import ImageDisplayComponent from './ImageDisplayComponent'; // Import the image component
+
 
 const TerminalStyle = styled.div`
   font-family: 'Courier New', monospace;
@@ -50,10 +52,14 @@ const TerminalComponent = () => {
       <Title>Welcome Valued Employee</Title>
 
       <DownloadSection>
+      <p>Installation Instructions: </p>
+      <ImageDisplayComponent />
         <p>Download the latest mod pack:</p>
         <DownloadButton onClick={handleDownload}>Download ZIP</DownloadButton>
       </DownloadSection>
       <DownloadSection>
+      <p>Installation Instructions: </p>
+      <ImageDisplayComponent />
         <p>Download the latest mod pack <b>with sound changes</b>:</p>
         <DownloadButton onClick={handleDownload}>Download ZIP</DownloadButton>
       </DownloadSection>
