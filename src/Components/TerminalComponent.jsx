@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import ImageDisplayComponent from './ImageDisplayComponent'; // Import the image component
-
+import ImageDisplayComponentTwo from './ImageDisplayComponentTwo'; // Import the image component
 
 const TerminalStyle = styled.div`
   font-family: 'Courier New', monospace;
@@ -37,14 +37,10 @@ const DownloadButton = styled.button`
   }
 `;
 
-const SearchBarContainer = styled.div`
-  margin-top: 20px;
-`;
-
 const TerminalComponent = () => {
   const handleDownload = () => {
     // Logic for file download
-    window.location.href = '/path/to/mock-zip-file.zip'; // Replace with actual path
+    window.location.href = 'src\assets\The_Company.zip'; // Replace with actual path
   };
 
   return (
@@ -59,7 +55,7 @@ const TerminalComponent = () => {
       </DownloadSection>
       <DownloadSection>
       <p>Installation Instructions: </p>
-      <ImageDisplayComponent />
+      <ImageDisplayComponentTwo />
         <p>Download the latest mod pack <b>with sound changes</b>:</p>
         <DownloadButton onClick={handleDownload}>Download ZIP</DownloadButton>
       </DownloadSection>

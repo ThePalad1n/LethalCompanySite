@@ -29,7 +29,7 @@ const Description = styled.p`
 `;
 
 
-const ImageDisplayComponent = () => {
+const ImageDisplayComponentTwo = () => {
     const [visibleImage, setVisibleImage] = useState(null);
   
     const toggleImage = (imageKey) => {
@@ -65,4 +65,4 @@ const ImageDisplayComponent = () => {
     );
   };
 
-export default ImageDisplayComponent;
+export default ImageDisplayComponentTwo;
