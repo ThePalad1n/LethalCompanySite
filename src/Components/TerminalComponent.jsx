@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Form from 'react-bootstrap/Form';
 
 const TerminalStyle = styled.div`
   font-family: 'Courier New', monospace;
-  color: green;
+  color: #8b0000;
   background: linear-gradient(to right, black, black); // Red gradient
   padding: 20px;
   border-radius: 5px;
@@ -15,7 +14,7 @@ const TerminalStyle = styled.div`
 `;
 
 const Title = styled.h1`
-  color: green; // Or any color that fits the theme
+  color: #8b0000; // Or any color that fits the theme
   text-align: center;
 `;
 
@@ -25,14 +24,14 @@ const DownloadSection = styled.div`
 `;
 
 const DownloadButton = styled.button`
-  background-color: green;
-  color: black;
+  background-color: #8b0000;
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
-    background-color: white;
+    background-color: green;
   }
 `;
 
@@ -58,9 +57,6 @@ const TerminalComponent = () => {
         <p>Download the latest mod pack <b>with sound changes</b>:</p>
         <DownloadButton onClick={handleDownload}>Download ZIP</DownloadButton>
       </DownloadSection>
-      <SearchBarContainer>
-        <input className="form-control" type="search" placeholder="Search" aria-label="Search"/>
-      </SearchBarContainer>
     </TerminalStyle>
   );
 };
