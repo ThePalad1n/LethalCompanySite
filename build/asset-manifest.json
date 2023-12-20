@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LethalCompanySite/static/css/main.fb35d48d.css",
+    "main.js": "/LethalCompanySite/static/js/main.367c80d5.js",
+    "static/js/787.1499e732.chunk.js": "/LethalCompanySite/static/js/787.1499e732.chunk.js",
+    "static/media/step2image5.JPG": "/LethalCompanySite/static/media/step2image5.87280ae1eac99f1e507d.JPG",
+    "index.html": "/LethalCompanySite/index.html",
+    "main.fb35d48d.css.map": "/LethalCompanySite/static/css/main.fb35d48d.css.map",
+    "main.367c80d5.js.map": "/LethalCompanySite/static/js/main.367c80d5.js.map",
+    "787.1499e732.chunk.js.map": "/LethalCompanySite/static/js/787.1499e732.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb35d48d.css",
+    "static/js/main.367c80d5.js"
+  ]
+}
