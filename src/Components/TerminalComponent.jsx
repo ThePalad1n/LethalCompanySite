@@ -38,9 +38,13 @@ const DownloadButton = styled.button`
 `;
 
 const TerminalComponent = () => {
-  const handleDownload = () => {
-    // Logic for file download
-    window.location.href = 'src\assets\The_Company.zip'; // Replace with actual path
+  const handleDownload = (fileName) => {
+    const link = document.createElement('a');
+    link.href = `src/assets/${fileName}`;
+    link.download = fileName;
+    document.body.appendChild(link); // Append to body
+    link.click(); // Simulate click
+    document.body.removeChild(link); // Remove the link when done
   };
 
   return (
@@ -48,16 +52,17 @@ const TerminalComponent = () => {
       <Title>Welcome Valued Employee</Title>
 
       <DownloadSection>
-      <p>Installation Instructions: </p>
-      <ImageDisplayComponent />
+        <p>Installation Instructions: </p>
+        <ImageDisplayComponent />
         <p>Download the latest mod pack:</p>
-        <DownloadButton onClick={handleDownload}>Download ZIP</DownloadButton>
+        <DownloadButton onClick={() => handleDownload('The_Company.zip')}>Download ZIP</DownloadButton>
       </DownloadSection>
+
       <DownloadSection>
-      <p>Installation Instructions: </p>
-      <ImageDisplayComponentTwo />
+        <p>Installation Instructions </p>
+        <ImageDisplayComponentTwo />
         <p>Download the latest mod pack <b>with sound changes</b>:</p>
-        <DownloadButton onClick={handleDownload}>Download ZIP</DownloadButton>
+        <DownloadButton onClick={() => handleDownload('The_Company_Sounds.zip')}>Download ZIP</DownloadButton>
       </DownloadSection>
     </TerminalStyle>
   );
