@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Accordion, Button } from 'react-bootstrap';
+import { Accordion } from 'react-bootstrap';
 import styled from 'styled-components';
 import step2image5 from '../assets/step2image5.JPG';
 
