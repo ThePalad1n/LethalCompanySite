@@ -1,7 +1,6 @@
 {
   "name": "lethal-company-site",
   "version": "0.1.0",
-  "homepage": "https://thepalad1n.github.io/LethalCompanySite/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
