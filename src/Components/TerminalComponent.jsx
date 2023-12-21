@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ImageDisplayComponent from './ImageDisplayComponent'; // Import the image component
+// import ImageDisplayComponent from './ImageDisplayComponent'; // Import the image component
 import ImageDisplayComponentTwo from './ImageDisplayComponentTwo'; // Import the image component
 
 const TerminalStyle = styled.div`
@@ -39,21 +39,21 @@ const DownloadButton = styled.button`
 
 const TerminalComponent = () => {
   // URLs to your Google Drive files
-  const googleDriveUrl1 = 'https://www.youtube.com/watch?v=l78x5cADWJM&t=1253s';
+  // const googleDriveUrl1 = 'https://www.youtube.com/watch?v=l78x5cADWJM&t=1253s';
   const googleDriveUrl2 = 'https://drive.google.com/drive/folders/1iu-8_sfByzhCsAUp3q9ltCFE2D12wmmS?usp=drive_link';
 
   return (
     <TerminalStyle>
       <Title>Welcome Valued Employee</Title>
 
-      <DownloadSection>
+      {/* <DownloadSection>
         <p>Installation Instructions: </p>
         <ImageDisplayComponent />
         <p>Download the latest mod pack:</p>
         <br></br>
         <DownloadButton as="a" href={googleDriveUrl1} target="_blank" rel="noopener noreferrer">Download ZIP</DownloadButton>
       </DownloadSection>
-<br></br><br></br>
+<br></br><br></br> */}
       <DownloadSection>
         <p>Installation Instructions </p>
         <ImageDisplayComponentTwo />
