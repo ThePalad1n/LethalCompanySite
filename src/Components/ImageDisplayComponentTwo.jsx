@@ -2,16 +2,6 @@ import React, { useState } from 'react';
 import { Accordion } from 'react-bootstrap';
 import styled from 'styled-components';
 
-
-
-const StyledImage = styled.img`
-  width: 100%;
-  height: auto;
-  max-height: 100vh;
-  display: block; // or none initially, depending on your preference
-  margin-top: 10px;
-`;
-
 const Description = styled.p`
   color: #8b0000; // Adjust color as needed
   margin-top: 10px;
