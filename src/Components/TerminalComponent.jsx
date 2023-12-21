@@ -38,14 +38,9 @@ const DownloadButton = styled.button`
 `;
 
 const TerminalComponent = () => {
-  const handleDownload = (fileName) => {
-    const link = document.createElement('a');
-    link.href = `src/assets/${fileName}`;
-    link.download = fileName;
-    document.body.appendChild(link); // Append to body
-    link.click(); // Simulate click
-    document.body.removeChild(link); // Remove the link when done
-  };
+  // URLs to your Google Drive files
+  const googleDriveUrl1 = 'https://www.youtube.com/watch?v=l78x5cADWJM&t=1253s';
+  const googleDriveUrl2 = 'https://drive.google.com/drive/folders/1iu-8_sfByzhCsAUp3q9ltCFE2D12wmmS?usp=drive_link';
 
   return (
     <TerminalStyle>
@@ -55,17 +50,20 @@ const TerminalComponent = () => {
         <p>Installation Instructions: </p>
         <ImageDisplayComponent />
         <p>Download the latest mod pack:</p>
-        <DownloadButton onClick={() => handleDownload('The_Company.zip')}>Download ZIP</DownloadButton>
+        <br></br>
+        <DownloadButton as="a" href={googleDriveUrl1} target="_blank" rel="noopener noreferrer">Download ZIP</DownloadButton>
       </DownloadSection>
-
+<br></br><br></br>
       <DownloadSection>
         <p>Installation Instructions </p>
         <ImageDisplayComponentTwo />
         <p>Download the latest mod pack <b>with sound changes</b>:</p>
-        <DownloadButton onClick={() => handleDownload('The_Company_Sounds.zip')}>Download ZIP</DownloadButton>
+        <br></br>
+        <DownloadButton as="a" href={googleDriveUrl2} target="_blank" rel="noopener noreferrer">Download ZIP</DownloadButton>
       </DownloadSection>
     </TerminalStyle>
   );
 };
+
 
 export default TerminalComponent;

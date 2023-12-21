@@ -18,6 +18,18 @@ const Description = styled.p`
   margin-top: 10px;
 `;
 
+const Buttonn = styled.button`
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: green;
+  }
+`;
+
 
 const ImageDisplayComponent = () => {
     const [visibleImage, setVisibleImage] = useState(null);
@@ -31,7 +43,7 @@ const ImageDisplayComponent = () => {
       <Accordion>
         <Accordion.Item eventKey="0">
           <Accordion.Body>
-            <Button onClick={() => toggleImage("step2image5")}>Click Me :D</Button>
+            <Buttonn onClick={() => toggleImage("step2image5")}>Click Me :D</Buttonn>
             {visibleImage === "step2image5" && (
               <>
                 <StyledImage src={step2image5} alt="Step 1" />
