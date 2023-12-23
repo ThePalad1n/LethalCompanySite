@@ -5,8 +5,8 @@ import ImageDisplayComponentTwo from './ImageDisplayComponentTwo'; // Import the
 
 const TerminalStyle = styled.div`
   font-family: 'Courier New', monospace;
-  color: #8b0000;
-  background: linear-gradient(to right, black, black); // Red gradient
+  // color: #8b0000;
+  // background: linear-gradient(to right, black, black); // Red gradient
   padding: 20px;
   border-radius: 5px;
   width: 80%;
